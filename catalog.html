@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__top">
+        <div class="header__left">
+          <a class="header__logo logo" href="index.html">
+            <img src="./img/header/logo.svg" alt="" class="logo-img">
+            <div class="logo-text">
+              автокран
+              <span>сервис</span>
+            </div>
+          </a>
+          <div class="header__descr text-descr">
+            Аренда автокранов в Москве и МО
+          </div>
+        </div>
+        <nav class="header__nav">
+          <a href="#" class="header__nav-link active">Главная</a>
+          <a href="catalog.html" class="header__nav-link">каталог автокаранов</a>
+          <a href="price-list.html" class="header__nav-link">Прайс-лист</a>
+          <a href="news.html" class="header__nav-link">Новости</a>
+          <a href="services.html" class="header__nav-link">Услуги</a>
+          <a href="contacts.html" class="header__nav-link">Контакты</a>
+        </nav>
+        <div class="header__right">
+          <a href="#" class="social-link">
+            <img src="./img/social/whatsapp.svg" alt="whatsapp">
+          </a>
+          <button class="btn btn--no-back" modal-btn="#order">заказать технику</button>
+          <div class="header__phone">
+            <img class="header__phone-img" src="./img/header/phone.svg" alt="phone">
+            <div class="header__phone-content">
+              <div class="text-descr text-descr--mini">Прием заявок 24/7</div>
+              <a href="tel:+74956433651">+7 (495) 643 36 51</a>
+            </div>
+          </div>
+          <button class="burger">
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="header__nav">
+          <a href="#" class="header__nav-link active">Главная</a>
+          <a href="catalog.html" class="header__nav-link">каталог автокаранов</a>
+          <a href="price-list.html" class="header__nav-link">Прайс-лист</a>
+          <a href="news.html" class="header__nav-link">Новости</a>
+          <a href="services.html" class="header__nav-link">Услуги</a>
+          <a href="contacts.html" class="header__nav-link">Контакты</a>
+        </nav>
+        <form class="header__search">
+          <input type="text" class="search" input-search placeholder="Поиск техники">
+          <button class="btn" btn-search>
+            <img src="./img/icons/loupe.svg" alt="loupe">
+          </button>
+          <div class="btn" btn-show-search>
+            <img src="./img/icons/loupe.svg" alt="loupe">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="breadcrumb">
+    <div class="container">
+      <div class="breadcrumb__inner">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb__item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb__item active">Каталог техники</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="container">
+      <h1 class="main-title">Каталог автокранов</h1>
+      <div class="page__inner">
+        <aside class="sidebar">
+          <div class="sidebar__header">
+            <span class="sidebar__header-text">Фильтр по параметрам</span>
+            <button btn-hide-body>
+            </button>
+          </div>
+          <div class="sidebar__body">
+            <div class="sidebar__body-block block-body">
+              <div class="block-body__caption" btn-catalog>Производитель <span class="icon"></span></div>
+              <div class="block-body__body">
+                <div class="block-body__body-wrap">
+                  <div class="form__group form__group--checkbox">
+                    <input id="making-1" type="checkbox">
+                    <label for="making-1">Галичанин</label>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <input id="making-2" type="checkbox">
+                    <label for="making-2">Клинцы</label>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <input id="making-3" type="checkbox">
+                    <label for="making-3">Liebherr</label>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <input id="making-4" type="checkbox">
+                    <label for="making-4">Grove</label>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <input id="making-5" type="checkbox">
+                    <label for="making-5">Ивановец</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar__body-block block-body">
+              <div class="block-body__caption" btn-catalog>Длина стрелы <span class="icon"></span></div>
+              <div class="block-body__body">
+                <div class="block-body__body-wrap">
+                  <div class="form__group form__group--checkbox">
+                    <input id="length-1" type="checkbox">
+                    <label for="length-1">Галичанин</label>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <input id="length-2" type="checkbox">
+                    <label for="length-2">Клинцы</label>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <input id="length-3" type="checkbox">
+                    <label for="length-3">Liebherr</label>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <input id="length-4" type="checkbox">
+                    <label for="length-4">Grove</label>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <input id="length-5" type="checkbox">
+                    <label for="length-5">Ивановец</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar__body-block block-body">
+              <div class="block-body__caption" btn-catalog>Грузоподъемность <span class="icon"></span></div>
+              <div class="block-body__body">
+                <div class="block-body__body-wrap">
+                  <div class="form__group form__group--checkbox">
+                    <input id="capacity-1" type="checkbox">
+                    <label for="capacity-1">20т</label>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <input id="capacity-2" type="checkbox">
+                    <label for="capacity-2">60т</label>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <input id="capacity-3" type="checkbox">
+                    <label for="capacity-3">80т</label>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <input id="capacity-4" type="checkbox">
+                    <label for="capacity-4">50т</label>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <input id="capacity-5" type="checkbox">
+                    <label for="capacity-5">60т</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="question-block">
+              <div class="question-block__img">
+                <img src="./img/question-block/question-1.svg" alt="" class="question-block__img-1">
+                <img src="./img/question-block/question-2.svg" alt="" class="question-block__img-2">
+              </div>
+              <div class="question-block__caption">Нужна консультация?</div>
+              <div class="question-block__text">Наши специалисты ответят на любой интересующий вопрос</div>
+              <a href="#" class="question-block__btn btn--black-text btn" modal-btn="#callback">Задать вопрос</a>
+            </div>
+          </div>
+          <div class="mobile-select">
+            <div class="catalog__products-select">
+              <span>Сортировать по:</span>
+              <div class="select select--catalog" data-select="2">
+                <div class="select__header">
+                  <div class="select__current" data-current="popular">
+                    популярности
+                  </div>
+                  <input type="hidden" value="popular">
+                </div>
+                <div class="select__body">
+                  <div class="select__item" data-value="popular">
+                    популярности
+                    <input type="hidden" value="popular">
+                  </div>
+                  <div class="select__item" data-value="expensive">
+                    сначало дороже
+                    <input type="hidden" value="expensive">
+                  </div>
+                  <div class="select__item" data-value="cheep">
+                    сначало дешевле
+                    <input type="hidden" value="cheep">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <main class="main">
+          <div class="catalog">
+            <div class="catalog__tabs">
+              <div class="catalog__tabs-wrap">
+                <a href="#" class="catalog__tabs-item active">
+                  300 тонн
+                </a>
+                <a href="#" class="catalog__tabs-item">
+                  200 тонн
+                </a>
+                <a href="#" class="catalog__tabs-item">
+                  120 тонн
+                </a>
+                <a href="#" class="catalog__tabs-item">
+                  100 тонн
+                </a>
+                <a href="#" class="catalog__tabs-item">
+                  Ивановец
+                </a>
+                <a href="#" class="catalog__tabs-item">
+                  300 тонн
+                </a>
+              </div>
+            </div>
+            <div class="catalog__products">
+              <div class="catalog__products-header">
+                <div class="catalog__products-select">
+                  <span>Сортировать по:</span>
+                  <div class="select select--catalog" data-select="2">
+                    <div class="select__header">
+                      <div class="select__current">
+                        популярности
+                      </div>
+                      <input type="hidden" value="popular">
+                    </div>
+                    <div class="select__body">
+                      <div class="select__item">
+                        популярности
+                        <input type="hidden" value="popular">
+                      </div>
+                      <div class="select__item">
+                        сначала дороже
+                        <input type="hidden" value="expensive">
+                      </div>
+                      <div class="select__item">
+                        сначало дешевле
+                        <input type="hidden" value="cheep">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__products-actions">
+                  <button class="active" btn-view data-view="block">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.10282 0.179688H0V3.28251H3.10282V0.179688ZM7.75712 4.83394H4.6543V7.93676H7.75712V4.83394ZM4.6543 9.48819H7.75712V12.591H4.6543V9.48819ZM3.10282 4.83394H0V7.93676H3.10282V4.83394ZM0 9.48819H3.10282V12.591H0V9.48819ZM12.4113 0.179688H9.30853V3.28251H12.4113V0.179688ZM4.6543 0.179688H7.75712V3.28251H4.6543V0.179688ZM12.4113 4.83394H9.30853V7.93676H12.4113V4.83394ZM9.30853 9.48819H12.4113V12.591H9.30853V9.48819Z" />
+                    </svg>
+                  </button>
+                  <button class="" btn-view data-view="list">
+                    <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.9906 0H4.26134V2.50312H17.9906V0ZM4.26134 5.0821H17.9906V7.58523H4.26134V5.0821ZM4.26134 10.0125H17.9906V12.5156H4.26134V10.0125ZM0.46875 10.0883H2.97187V12.5915H0.46875V10.0883ZM2.97187 5.0821H0.46875V7.58523H2.97187V5.0821ZM0.46875 0H2.97187V2.50312H0.46875V0Z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="catalog__products-products products products--catalog">
+                <div class="products__row">
+                  <div class="products__col">
+                    <div class="product">
+                      <a href="#" class="product__img">
+                        <img src="./img/product/product-img_1.png" alt="">
+                      </a>
+                      <div class="product__body">
+                        <div class="product__content">
+                          <h5 class="product__title">Автокран Ивановец КС-35714К-3 - 16 тонн</h5>
+                        </div>
+                        <div class="product__content-wrap">
+                          <div class="product__info">
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. грузоподъемность:</div>
+                              <span class="product__info-value">16 т.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. вылет стрелы:</div>
+                              <span class="product__info-value">18 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Длина гуська:</div>
+                              <span class="product__info-value">7 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Эксплуат. масса:</div>
+                              <span class="product__info-value">17, 88 т.</span>
+                            </div>
+                          </div>
+                          <div class="product__price">
+                            от <span>10 000</span> руб./смена
+                          </div>
+                        </div>
+                        <div class="product__actions">
+                          <a href="#" class="btn btn--small">Подробнее</a>
+                          <button class="btn btn--small btn--dark" modal-btn="#order"><span>Заказать технику</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__col">
+                    <div class="product">
+                      <a href="#" class="product__img">
+                        <img src="./img/product/product-img_1.png" alt="">
+                      </a>
+                      <div class="product__body">
+                        <div class="product__content">
+                          <h5 class="product__title">Автокран Ивановец КС-45717К-1 - 25 тонн</h5>
+                        </div>
+                        <div class="product__content-wrap">
+                          <div class="product__info">
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. грузоподъемность:</div>
+                              <span class="product__info-value">16 т.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. вылет стрелы:</div>
+                              <span class="product__info-value">18 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Длина гуська:</div>
+                              <span class="product__info-value">7 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Эксплуат. масса:</div>
+                              <span class="product__info-value">17, 88 т.</span>
+                            </div>
+                          </div>
+                          <div class="product__price">
+                            от <span>10 000</span> руб./смена
+                          </div>
+                        </div>
+                        <div class="product__actions">
+                          <a href="#" class="btn btn--small">Подробнее</a>
+                          <button class="btn btn--small btn--dark" modal-btn="#order"><span>Заказать технику</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__col">
+                    <div class="product">
+                      <a href="#" class="product__img">
+                        <img src="./img/product/product-img_1.png" alt="">
+                      </a>
+                      <div class="product__body">
+                        <div class="product__content">
+                          <h5 class="product__title">Автокран вездеход Галичанин KC-55713-5В
+                            - 25 тонн</h5>
+                        </div>
+                        <div class="product__content-wrap">
+                          <div class="product__info">
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. грузоподъемность:</div>
+                              <span class="product__info-value">16 т.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. вылет стрелы:</div>
+                              <span class="product__info-value">18 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Длина гуська:</div>
+                              <span class="product__info-value">7 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Эксплуат. масса:</div>
+                              <span class="product__info-value">17, 88 т.</span>
+                            </div>
+                          </div>
+                          <div class="product__price">
+                            от <span>10 000</span> руб./смена
+                          </div>
+                        </div>
+                        <div class="product__actions">
+                          <a href="#" class="btn btn--small">Подробнее</a>
+                          <button class="btn btn--small btn--dark" modal-btn="#order"><span>Заказать технику</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__col">
+                    <div class="product">
+                      <a href="#" class="product__img">
+                        <img src="./img/product/product-img_1.png" alt="">
+                      </a>
+                      <div class="product__body">
+                        <div class="product__content">
+                          <h5 class="product__title">Автокран Ивановец КС-35714К-3 - 16 тонн</h5>
+                        </div>
+                        <div class="product__content-wrap">
+                          <div class="product__info">
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. грузоподъемность:</div>
+                              <span class="product__info-value">16 т.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. вылет стрелы:</div>
+                              <span class="product__info-value">18 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Длина гуська:</div>
+                              <span class="product__info-value">7 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Эксплуат. масса:</div>
+                              <span class="product__info-value">17, 88 т.</span>
+                            </div>
+                          </div>
+                          <div class="product__price">
+                            от <span>10 000</span> руб./смена
+                          </div>
+                        </div>
+                        <div class="product__actions">
+                          <a href="#" class="btn btn--small">Подробнее</a>
+                          <button class="btn btn--small btn--dark" modal-btn="#order"><span>Заказать технику</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__col">
+                    <div class="product">
+                      <a href="#" class="product__img">
+                        <img src="./img/product/product-img_1.png" alt="">
+                      </a>
+                      <div class="product__body">
+                        <div class="product__content">
+                          <h5 class="product__title">Автокран Ивановец КС-35714К-3 - 16 тонн</h5>
+                        </div>
+                        <div class="product__content-wrap">
+                          <div class="product__info">
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. грузоподъемность:</div>
+                              <span class="product__info-value">16 т.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. вылет стрелы:</div>
+                              <span class="product__info-value">18 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Длина гуська:</div>
+                              <span class="product__info-value">7 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Эксплуат. масса:</div>
+                              <span class="product__info-value">17, 88 т.</span>
+                            </div>
+                          </div>
+                          <div class="product__price">
+                            от <span>10 000</span> руб./смена
+                          </div>
+                        </div>
+                        <div class="product__actions">
+                          <a href="#" class="btn btn--small">Подробнее</a>
+                          <button class="btn btn--small btn--dark" modal-btn="#order"><span>Заказать технику</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__col">
+                    <div class="product">
+                      <a href="#" class="product__img">
+                        <img src="./img/product/product-img_1.png" alt="">
+                      </a>
+                      <div class="product__body">
+                        <div class="product__content">
+                          <h5 class="product__title">Автокран Ивановец КС-45717К-1 - 25 тонн</h5>
+                        </div>
+                        <div class="product__content-wrap">
+                          <div class="product__info">
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. грузоподъемность:</div>
+                              <span class="product__info-value">16 т.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. вылет стрелы:</div>
+                              <span class="product__info-value">18 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Длина гуська:</div>
+                              <span class="product__info-value">7 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Эксплуат. масса:</div>
+                              <span class="product__info-value">17, 88 т.</span>
+                            </div>
+                          </div>
+                          <div class="product__price">
+                            от <span>10 000</span> руб./смена
+                          </div>
+                        </div>
+                        <div class="product__actions">
+                          <a href="#" class="btn btn--small">Подробнее</a>
+                          <button class="btn btn--small btn--dark" modal-btn="#order"><span>Заказать технику</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__col">
+                    <div class="product">
+                      <a href="#" class="product__img">
+                        <img src="./img/product/product-img_1.png" alt="">
+                      </a>
+                      <div class="product__body">
+                        <div class="product__content">
+                          <h5 class="product__title">Автокран вездеход Галичанин KC-55713-5В
+                            - 25 тонн</h5>
+                        </div>
+                        <div class="product__content-wrap">
+                          <div class="product__info">
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. грузоподъемность:</div>
+                              <span class="product__info-value">16 т.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. вылет стрелы:</div>
+                              <span class="product__info-value">18 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Длина гуська:</div>
+                              <span class="product__info-value">7 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Эксплуат. масса:</div>
+                              <span class="product__info-value">17, 88 т.</span>
+                            </div>
+                          </div>
+                          <div class="product__price">
+                            от <span>10 000</span> руб./смена
+                          </div>
+                        </div>
+                        <div class="product__actions">
+                          <a href="#" class="btn btn--small">Подробнее</a>
+                          <button class="btn btn--small btn--dark" modal-btn="#order"><span>Заказать технику</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__col">
+                    <div class="product">
+                      <a href="#" class="product__img">
+                        <img src="./img/product/product-img_1.png" alt="">
+                      </a>
+                      <div class="product__body">
+                        <div class="product__content">
+                          <h5 class="product__title">Автокран Ивановец КС-35714К-3 - 16 тонн</h5>
+                        </div>
+                        <div class="product__content-wrap">
+                          <div class="product__info">
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. грузоподъемность:</div>
+                              <span class="product__info-value">16 т.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. вылет стрелы:</div>
+                              <span class="product__info-value">18 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Длина гуська:</div>
+                              <span class="product__info-value">7 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Эксплуат. масса:</div>
+                              <span class="product__info-value">17, 88 т.</span>
+                            </div>
+                          </div>
+                          <div class="product__price">
+                            от <span>10 000</span> руб./смена
+                          </div>
+                        </div>
+                        <div class="product__actions">
+                          <a href="#" class="btn btn--small">Подробнее</a>
+                          <button class="btn btn--small btn--dark" modal-btn="#order"><span>Заказать технику</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__col">
+                    <div class="product">
+                      <a href="#" class="product__img">
+                        <img src="./img/product/product-img_1.png" alt="">
+                      </a>
+                      <div class="product__body">
+                        <div class="product__content">
+                          <h5 class="product__title">Автокран Ивановец КС-35714К-3 - 16 тонн</h5>
+                        </div>
+                        <div class="product__content-wrap">
+                          <div class="product__info">
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. грузоподъемность:</div>
+                              <span class="product__info-value">16 т.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Макс. вылет стрелы:</div>
+                              <span class="product__info-value">18 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Длина гуська:</div>
+                              <span class="product__info-value">7 м.</span>
+                            </div>
+                            <div class="product__info-item">
+                              <div class="product__info-caption">Эксплуат. масса:</div>
+                              <span class="product__info-value">17, 88 т.</span>
+                            </div>
+                          </div>
+                          <div class="product__price">
+                            от <span>10 000</span> руб./смена
+                          </div>
+                        </div>
+                        <div class="product__actions">
+                          <a href="#" class="btn btn--small">Подробнее</a>
+                          <button class="btn btn--small btn--dark" modal-btn="#order"><span>Заказать технику</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="show-more">
+            Показать ещё
+          </button>
+        </main>
+      </div>
+    </div>
+  </div>
+  <div class="features features--mt">
+    <div class="container">
+      <div class="features__grid">
+        <div class="features__grid-item features__item">
+          <div class="features__item-header">
+            <img src="./img/features/features_1.svg" class="features__item-img">
+            <div class="features__item-text">Быстрая<br>подача</div>
+          </div>
+          <div class="features__text">
+            Доставим технику на объект в день обращения
+          </div>
+        </div>
+        <div class="features__grid-item features__item">
+          <div class="features__item-header">
+            <img src="./img/features/features_2.svg" class="features__item-img">
+            <div class="features__item-text">Полноценный<br>документооборт</div>
+          </div>
+          <div class="features__text">
+            Полный перечень бухгалтерских доументов и отчетности в срок
+          </div>
+        </div>
+        <div class="features__grid-item features__item">
+          <div class="features__item-header">
+            <img src="./img/features/features_3.svg" class="features__item-img">
+            <div class="features__item-text">Надежность</div>
+          </div>
+          <div class="features__text">
+            Наша техника всегда обслужена, заправлена и готова к работе 24/7
+          </div>
+        </div>
+        <div class="features__grid-item features__item">
+          <div class="features__item-header">
+            <img src="./img/features/features_4.svg" class="features__item-img">
+            <div class="features__item-text">Экспертиза</div>
+          </div>
+          <div class="features__text">
+            Опытные машинисты и менеджеры, регулярно повышающие квалификацию
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="calc-rent">
+    <div class="container">
+      <div class="calc-rent__inner">
+        <div class="calc-rent__header">
+          <h2 class="calc-rent__title section-title">Калькулятор аренды автокрана</h2>
+          <div class="text-descr">Рассчитайте примерную стоимость аренды спецтехники</div>
+        </div>
+        <form action="/" class="form">
+          <div class="calc-rent__choose">
+            <div class="form__group form__group--select">
+              <div class="select" data-select="1">
+                <div class="select__header">
+                  <div class="select__current" data-current="">Выберите автокран</div>
+                  <input type="hidden" value="">
+                </div>
+                <div class="select__body">
+                  <div class="select__item" data-value="kc-35714k-3">Ивановец КС-35714К-3
+                    <input type="hidden" value="Ивановец КС-35714К-3">
+                  </div>
+                  <div class="select__item" data-value="kc-45717k-1">Ивановец КС-45717К-1
+                    <input type="hidden" value="Ивановец КС-45717К-1">
+                  </div>
+                  <div class="select__item" data-value="kc-55713-5В">Вездеход Галичанин KC-55713-5В
+                    <input type="hidden" value="Вездеход Галичанин KC-55713-5В">
+                  </div>
+                  <div class="select__item" data-value="arrow">Ивановец с овоидной стрелой
+                    <input type="hidden" value="Ивановец с овоидной стрелой">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form__group">
+              <input type="text" class="form__control" placeholder="Количество семян" input-number>
+            </div>
+            <div class="form__group form__group--address">
+              <img src="./img/icons/adress.svg" alt="">
+              <input type="text" class="form__control" placeholder="Адрес доставки техники">
+            </div>
+          </div>
+          <div class="calc-rent__map">
+            <div id="ymap" icon-url="../img/icons/ymap-icon.svg"></div>
+            <div class="calc-rent__price">
+              <div class="text-descr">Ориентировочная стоимость:</div>
+              <div class="calc-rent__price-price"><span>55 000</span> руб.</div>
+            </div>
+          </div>
+          <div class="calc-rent__footer">
+            <div class="calc-rent__block">
+              <div class="calc-rent__footer-text">
+                Оставьте заявку и наш менеджер свяжется с вами для уточнения деталей заказа
+              </div>
+              <div class="form__wrap">
+                <div class="form__group">
+                  <input id="tel" class="form__control form__control--tel masked" data-mask="+7 (###) ###-##-##"
+                    type="tel" placeholder="+7 (999) 999-99-99">
+                </div>
+                <button type="submit" class="btn btn--big btn--only-small"><span>Отправить</span></button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="order-call">
+    <div class="container">
+      <div class="order-call__content">
+        <h2 class="section-title">Заказать звонок</h2>
+        <div class="text-descr">Оставьте свои контактные данные, и наш менеджер вам перезвонит и предложит наилучшее
+          решение</div>
+        <div class="order-call__actions">
+          <button class="btn btn--no-back btn--gray" modal-btn="#callback">перезвонить мне</button>
+          <button class="btn btn--no-back" modal-btn="#order">заказать технику</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features-number">
+    <img class="features-number__bg" src="./img/features-number/feature-number__bg.svg" alt="bg">
+    <div class="container">
+      <div class="features-number__inner">
+        <div class="features-number__img">
+          <img src="./img/features-number/feature-number__img.png" alt="">
+        </div>
+        <div class="features-number__content">
+          <h2 class="section-title">Компания в цифрах</h2>
+          <ul class="features-number__list">
+            <li class="features-number__list-item">
+              <div class="features-number__item">
+                <div class="features-number__value">100+</div>
+                <div class="features-number__caption">ЕДИНИЦ<br>СПЕЦТЕХНИКИ</div>
+              </div>
+            </li>
+            <li class="features-number__list-item">
+              <div class="features-number__item">
+                <div class="features-number__value">10+</div>
+                <div class="features-number__caption">ЛЕТ<br>ОПЫТА</div>
+              </div>
+            </li>
+            <li class="features-number__list-item">
+              <div class="features-number__item">
+                <div class="features-number__value">30+</div>
+                <div class="features-number__caption">НАША КОМАНДА</div>
+              </div>
+            </li>
+            <li class="features-number__list-item">
+              <div class="features-number__item">
+                <div class="features-number__value">24/7</div>
+                <div class="features-number__caption">прием<br>заявок</div>
+              </div>
+            </li>
+          </ul>
+          <div class="features-number__content-footer">
+            <button class="btn btn--big btn--big-dark"><span>Оставить заявку <img
+                  src="./img/icons/arrow-yellow-right.svg" alt=""></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="rent-descr">
+    <div class="container">
+      <div class="rent-descr__content">
+        <h2 class="section-title">Аренда автокранов в Москве</h2>
+        <div class="main-descr">
+          <b> Главное качество автокранов - мобильность - является ключевым, поскольку задержка с появлением крана на
+            стройплощадке ведет к ощутимым финансовым потерям.</b>
+          <p>
+            На сегодняшний день ни одни строительные работы не обходятся без применения грузоподъемных механизмов,
+            среди
+            которых автомобильные краны играют едва ли не самую заметную роль. Благодаря высокой скорости передвижения
+            автокраны удобно использовать на удаленных один от другого объектах с небольшими объемами работ. </p>
+          <div class="hidden-body">
+            <p>
+              Как правило, краны применяются для выполнения работ по перемещению штучных грузов, а также для монтажа
+              конструкций и технического оборудования. Не секрет, что иметь свой парк автомобильных кранов дорого и
+              порой
+              не
+              целесообразно, именно по этому большинство организаций находят оптимальное решение, прибегая к услугам
+              аренды
+              автокрана. Наша компания предлагает технику подходящую практически для любых погрузочно-разгрузочных и
+              монтажных работ.</p>
+          </div>
+          <button class="btn btn--text">Подробнее</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="quite-order">
+    <div class="container">
+      <div class="quite-order__content">
+        <h2 class="section-title">Быстрый заказ техники </h2>
+        <div class="text-descr">Нет времени искать? Мы предложим лучшие варианты для вас! Оставьте телефон, мы
+          перезвоним!</div>
+        <div class="form__wrap">
+          <div class="form__group">
+            <input id="tel" class="form__control form__control--tel masked" data-mask="+7 (###) ###-##-##" type="tel"
+              placeholder="+7 (999) 999-99-99">
+          </div>
+          <button type="submit" class="btn btn--big btn--only-small"><span>Отправить</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal-overlay">
+  <div class="modal" id="order">
+    <button class="modal__close">
+    </button>
+    <div class="modal__img">
+      <img src="./img/modal/modal-img.png" alt="avto">
+    </div>
+    <div class="modal__content">
+      <form action="/" class="form">
+        <h4 class="form__title">Заказать технику</h4>
+        <div class="form__group">
+          <input type="text" class="form__control" placeholder="Ваше имя">
+        </div>
+        <div class="form__group">
+          <input id="tel" class="form__control form__control--tel masked" data-mask="+7 (###) ###-##-##" type="tel"
+            placeholder="+7 (999) 999-99-99">
+        </div>
+        <div class="form__group">
+          <textarea class="form__control form__area">Ваш комментарий</textarea>
+        </div>
+        <small>Отправляя форму, вы подтверждаете свое согласие на обработку персональных данных.</small>
+        <button class="btn btn--big form__btn"><span>Отправить</span></button>
+      </form>
+    </div>
+  </div>
+  <div class="modal modal--small" id="callback">
+    <button class="modal__close">
+    </button>
+    <div class="modal__content">
+      <form action="/" class="form">
+        <h4 class="form__title">Обратный звонок</h4>
+        <div class="form__group">
+          <input type="text" class="form__control" placeholder="Ваше имя">
+        </div>
+        <div class="form__group">
+          <input id="tel" class="form__control form__control--tel masked" data-mask="+7 (###) ###-##-##" type="tel"
+            placeholder="+7 (999) 999-99-99">
+        </div>
+        <small>Отправляя форму, вы подтверждаете свое согласие на обработку персональных данных.</small>
+        <button class="btn btn--big form__btn"><span>Отправить</span></button>
+      </form>
+    </div>
+  </div>
+  <div class="modal modal--product" id="order-one">
+    <button class="modal__close">
+    </button>
+    <h3 class="modal__title">Аренда автокрана Ивановец КС-35714К-3 - 16 тонн</h3>
+    <input type="hidden" class="modal-info-title" value="">
+    <div class="modal__wrap">
+      <div class="modal__left">
+        <div class="modal__img">
+          <img src="./img/modal/modal-img.png" alt="avto">
+        </div>
+        <div class="modal__price">
+          <span class="modal__price-text">Цена за смену:</span>
+          <div>от <span class="price">10 000</span> руб</div>
+          <input type="hidden" class="modal-info-price" value="">
+        </div>
+      </div>
+      <div class="modal__content">
+        <form action="/" class="form">
+          <div class="form__group">
+            <input type="text" class="form__control" placeholder="Ваше имя">
+          </div>
+          <div class="form__group">
+            <input id="tel" class="form__control form__control--tel masked" data-mask="+7 (###) ###-##-##" type="tel"
+              placeholder="+7 (999) 999-99-99">
+          </div>
+          <div class="form__group">
+            <textarea class="form__control form__area">Ваш комментарий</textarea>
+          </div>
+          <small>Отправляя форму, вы подтверждаете свое согласие на обработку персональных данных.</small>
+          <button class="btn btn--big form__btn"><span>Отправить</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__top-inner">
+        <div class="footer__top-header">
+          <a class="footer__logo logo" href="#">
+            <img src="./img/footer/logo.svg" alt="Logo" class="logo-img">
+            <div class="logo-text logo-text--dark">
+              автокран
+              <span>сервис</span>
+            </div>
+          </a>
+          <div class="footer__row">
+            <div class="footer__col">
+              <nav class="footer__nav">
+                <a href="#" class="footer__nav-link active">Главная</a>
+                <a href="#" class="footer__nav-link">Каталог автокранов</a>
+                <a href="#" class="footer__nav-link">Прайс-лист</a>
+                <a href="#" class="footer__nav-link">Новости</a>
+                <a href="#" class="footer__nav-link">Услуги</a>
+                <a href="#" class="footer__nav-link">Контакты</a>
+              </nav>
+            </div>
+            <div class="footer__col">
+              <a href="#" class="social-link">
+                <img src="./img/social/whatsapp.svg" alt="whatsapp">
+              </a>
+              <div class="footer__actions">
+                <button class="btn btn--no-back btn--gray" modal-btn="#order">заказать технику</button>
+                <button class="btn btn--no-back" modal-btn="#callback">перезвонить мне</button>
+              </div>
+            </div>
+            <div class="footer__col">
+              <div class="footer__phone">
+                <a href="tel:+74956433651">+7 (495) 643 36 51</a>
+                <div class="footer__phone-text text-descr text-descr--mini">Прием заявок 24/7</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__top-footer">
+          <div class="footer__footer-text text-descr">Аренда автокранов в Москве и МО</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <div class="footer__bottom-col">
+          © 2021. Все права защищены
+        </div>
+        <div class="footer__bottom-col">
+          <div class="footer__bottom-text">Разработка и продвижение</div>
+          <img src="./img/footer/footer-bottom_img.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
